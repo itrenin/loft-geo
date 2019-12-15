@@ -1,16 +1,9 @@
 {
   "presets": [
-    [
-      "@babel/env",
-      {
-        "modules": false,
-        "targets": {
-          "ie": "11"
-        }
-      }
-    ]
+    "latest"
   ],
   "plugins": [
-    "@babel/transform-runtime"
+    "transform-runtime"
   ]
 }
+

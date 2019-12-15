@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{{htmlWebpackPlugin.options.title}}</title>
+        <script src="https://api-maps.yandex.ru/2.1/?apikey=1401606c-7bbe-40b3-9224-b8e00829670b&lang=ru_RU" type="text/javascript"></script>
+          <style>
 
-<head>
-    <meta charset="UTF-8">
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=1401606c-7bbe-40b3-9224-b8e00829670b&lang=ru_RU" type="text/javascript"></script>
-    <title>{{htmlWebpackPlugin.options.title}}</title>
-</head>
-
-<body>
-    <div class="container">
-        {{> "./src/templates/geo-content.hbs" }}
-    </div>
-</body>
-
+  </style>
+    </head>
+    <body>        
+        <div class="wrap">
+            <div class="map" id="map"></div>
+            <div id="reviewBlock" class="reviewBlock visually-hidden" data-coord="" data-address="" data-position="">
+                {{> "./src/templates/makeFormTemplate.hbs"}}
+            </div>
+        </div>
+    </body>
 </html>
